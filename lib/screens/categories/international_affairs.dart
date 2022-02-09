@@ -44,6 +44,12 @@ class _InternationalAffairsState extends State<InternationalAffairs> {
             ),
             FloatingActionButton(
               heroTag: 'btn2',
+              backgroundColor: Colors.black,
+              onPressed: () {},
+              child: Text('$selectedNews/10'),
+            ),
+            FloatingActionButton(
+              heroTag: 'btn3',
               backgroundColor: Colors.amber,
               onPressed: () async {
                 setState(() {

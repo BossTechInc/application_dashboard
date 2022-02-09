@@ -41,6 +41,12 @@ class _ScienceAndTechState extends State<ScienceAndTech> {
               ),
               FloatingActionButton(
                 heroTag: 'btn2',
+                backgroundColor: Colors.black,
+                onPressed: () {},
+                child: Text('$selectedNews/10'),
+              ),
+              FloatingActionButton(
+                heroTag: 'btn3',
                 backgroundColor: Colors.amber,
                 onPressed: () async {
                   setState(() {

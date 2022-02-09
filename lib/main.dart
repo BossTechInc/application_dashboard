@@ -1,5 +1,9 @@
 import 'package:concise_dashboard/provider/business_api.dart';
+import 'package:concise_dashboard/provider/entertainment_api.dart';
+import 'package:concise_dashboard/provider/health_api.dart';
+import 'package:concise_dashboard/provider/politics_api.dart';
 import 'package:concise_dashboard/provider/science_and_tech_api.dart';
+import 'package:concise_dashboard/provider/sports_api.dart';
 import 'package:concise_dashboard/provider/world_api.dart';
 import 'package:concise_dashboard/screens/categories.dart';
 import 'package:concise_dashboard/screens/categories/entertainment.dart';
@@ -31,6 +35,10 @@ class MyApp extends StatelessWidget {
         ChangeNotifierProvider(create: (_) => ScienceAndTechProvider()),
         ChangeNotifierProvider(create: (_) => InternationalProvider()),
         ChangeNotifierProvider(create: (_) => BusinessProvider()),
+        ChangeNotifierProvider(create: (_) => EntertainmentProvider()),
+        ChangeNotifierProvider(create: (_)=>PoliticsProvider()),
+        ChangeNotifierProvider(create: (_) => HealthProvider()),
+        ChangeNotifierProvider(create: (_)=>SportsProvider()),
       ],
       child: MaterialApp(
         title: 'Concise Dashboard',

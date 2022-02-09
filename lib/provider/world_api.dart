@@ -12,8 +12,8 @@ class InternationalProvider with ChangeNotifier {
   List<NewsListModel> theIndianExpress = [];
   List<NewsListModel> hindustanTimes = [];
   List<NewsListModel> latestNews = [];
-
   List<NewsListModel> newsToUpload = [];
+
   String worldNewsLoc = 'news/international_affairs/international_news';
 
   int latestNewsNum = 0;
